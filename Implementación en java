@@ -1,0 +1,59 @@
+
+
+class Patient {
+    private String CI, name, gender;
+    private double weight, height;
+    private List<Disease> diseases;
+    private List<Image> images;
+
+    public Patient(String CI, String name, String gender, double weight, double height, Disease firstDisease) {
+        this.CI = CI;
+        this.name = name;
+        this.gender = gender;
+        this.weight = weight;
+        this.height = height;
+        this.diseases = new ArrayList<>();
+        this.images = new ArrayList<>();
+        addDisease(firstDisease);
+    }
+
+    public void addDisease(Disease d) {
+        if (d != null) {
+            diseases.add(d);
+        }
+    }
+
+    public void addImage(Image i) {
+        if (i != null) {
+            images.add(i);
+        }
+    }
+
+    public String getDetails() {
+        return "CI: " + CI + ", Name: " + name + ", Gender: " + gender + 
+               ", Weight: " + weight + "kg, Height: " + height + "m, " + 
+               "Diseases: " + diseases.size() + ", Images: " + images.size();
+    }
+}
+
+class Image {
+    private String fileName, type, comments;
+    private Date date;
+
+    public Image(String fileName, Date date, String type, String comments) {
+        this.fileName = fileName;
+        this.date = date;
+        this.type = type;
+        this.comments = comments;
+    }
+}
+
+class Disease {
+    private String name, treatment;
+    private Date date;
+
+    public Disease(String name, Date date, String treatment) {
+        this.name = name;
+        this.date = date;
+        this.treatment = treatment;
+    }
