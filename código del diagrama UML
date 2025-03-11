@@ -25,7 +25,7 @@ class Disease {
     - treatment: String
 }
 
-Patient "1" *-- "1..*" Image
+Patient "1" *-- "0..*" Image
 Patient "1" *-- "1..*" Disease
 @enduml
 //www.plantuml.com/plantuml/png/ZP51IyD048Nl-ok6d99A2buNaK9pAOW8_eAnEoOBkrlPcI0Y_dVNPhfALMWkcVbUU6yUsR1WbZa6im_830yedfB0ku7ozB3TMNYKxDEe866aCpHISfGjR2VCYbx9ZvDO60xpKo25qr_GUIPaOWjtdkLcMDPRLNt4iMgxigXoLK9b844VkErEzwY4pgbDwopes7sBHv_MMpWEdVamI_bbhzMVVQ3xtsqTIa432YcGjvVpR_Q762a9LrmZz9eQaYu9o8JovVVJxlIZcki6LdrVtklrgbag_2TgkDbGSdCCdm00
