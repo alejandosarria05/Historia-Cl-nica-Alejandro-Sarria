@@ -1,0 +1,30 @@
+@startuml
+class Patient {
+    - CI: String
+    - name: String
+    - gender: Char
+    - weight: Double
+    - height: Double
+    - diseases: List<Disease>
+    - images: List<Image>
+    + getDetails(): String
+    + addDisease(d: Disease)
+    + addImage(i: Image)
+}
+
+class Image {
+    - fileName: String
+    - date: Date
+    - type: String
+    - comments: String
+}
+
+class Disease {
+    - name: String
+    - date: Date
+    - treatment: String
+}
+
+Patient "1" *-- "1..*" Image
+Patient "1" *-- "1..*" Disease
+@enduml
