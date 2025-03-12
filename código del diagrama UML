@@ -28,4 +28,4 @@ class Disease {
 Patient "1" *-- "0..*" Image
 Patient "1" *-- "1..*" Disease
 @enduml
-//www.plantuml.com/plantuml/png/ZP51IyD048Nl-ok6d99AYhqk8eNcKX0H_0LZTqmMThUoCq54_E_6PBfAww4vpNmll3UFtR9WbZ46SmZ834yedfB0fu7fQs6tj_0isQTUGS98PwYdv2XRs0sO5RsJxmUnq1t7bq0AX_-Wyqp8n1OUFCjTjwptglg8VT7sqwBApHGg7Gdwm7LpkaSbT4vjQcT1n-PNd7rgRs4U6lDbblBBNgg_-a2FbsqToeGw558W7s_d_noECL8IBhX4w3Kb95qJa0dbn--ltUcXgaq5gxQ5wdQzNbLBXKjnCuiQRhQKt1Z3Dm00
+
